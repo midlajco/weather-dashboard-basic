@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    background:#f2f2f2;
+    color:#222;
+    background-image: url(sky.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.container{
+    width:90%;
+    max-width:500px;
+    margin:30px auto;
+}
+
+h1,h2{
+    text-align:center;
+    margin:15px 0;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+}
+
+input{
+    flex:1;
+    padding:10px;
+}
+
+button{
+    padding:10px;
+    cursor:pointer;
+}
+
+#weatherCard{
+    align-items:center;
+    flex-direction: column;
+    justify-content:space-around ;
+    min-height: 380px;
+
+    margin-top:20px;
+    padding:20px;
+    border:1px solid #000000;
+    display:none;
+}
+
+.favorite{
+    display:flex;
+    justify-content:space-between;
+    margin:8px 0;
+    padding:8px;
+    border:1px solid #030303;
+}
+
+.dark{
+
+    background:#222;
+    color:white;
+    background-image: url(darksky.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.dark #weatherCard,
+.dark .favorite{
+    border:1px solid white;
+}
+
+#loading{
+    color:blue;
+    margin-top:10px;
+}
+
+#error{
+    color:red;
+    margin-top:10px;
+}
